@@ -1,0 +1,168 @@
+* {
+  --lightText: rgba(255, 255, 255, 0.75);
+  --text: rgba(255, 255, 255, 1);
+  --blackText: rgba(0, 0, 0, 1);
+  --headerSize1: 48px;
+  --headerSize2: 32px;
+}
+
+body {
+  background-image: linear-gradient(white 80%, black);
+  background-attachment: fixed;
+  min-height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: black;
+  padding: 1px 0 1px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--text);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  border-radius: 1px;
+}
+
+header h1 {
+  flex: 4;
+  font-size: var(--headerSize2);
+  font-weight: bolder;
+  margin: 0 0 0 2%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+header ul img {
+  padding: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--lightText);
+  padding: 0 10px;
+}
+
+.word-link a:hover {
+  background: rgba(255, 255, 255, 1);
+  color: var(--blackText);
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url(./images/siesta-key-beach-florida.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin: 0;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  color: var(--blackText);
+  font-size: var(--headerSize1);
+  font-weight: bolder;
+  text-align: center;
+  margin: 5% 25% 10% 25%;
+}
+
+.flex-div,
+#contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-div div {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 5% 0 2%;
+}
+
+.flex-div h3 {
+  text-decoration: underline;
+  color: var(--blackText);
+  font-size: var(--headerSize1);
+  height: 25px;
+}
+
+.flex-div p {
+  color: var(--blackText);
+}
+
+.flex-div img {
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+.portfolio-card {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex: 1 35%;
+  margin: 10px;
+}
+
+.portfolio-card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+}
+
+.portfolio-card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#first-card {
+  flex: 0 100%;
+}
+
+.portfolio-card a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 2%;
+}
+
+#portfolio h3,
+#contact-me h3 {
+  text-align: center;
+  flex: 0 100%;
+  font-size: var(--headerSize1);
+  color: var(--blackText);
+}
+
+#contact-me {
+  width: 100%;
+}
