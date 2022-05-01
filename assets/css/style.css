@@ -106,7 +106,7 @@ header a {
   text-decoration: underline;
   color: var(--blackText);
   font-size: var(--headerSize1);
-  height: 25px;
+  max-height: 25px;
 }
 
 .flex-div p {
@@ -210,6 +210,8 @@ textarea {
   display: block;
   width: 100%;
   margin: 1% 0;
+  border: 1.5px solid var(--blackText);
+  outline-style: none;
 }
 
 .contact-form button {
@@ -229,4 +231,29 @@ textarea {
 
 footer {
   height: 100px;
+}
+
+@media screen and (max-width: 578px) {
+  header h1 {
+    flex: 0 100%;
+    text-align: center;
+    margin: 15px auto 0 auto;
+  }
+  .content h2 {
+    flex: 0 100%;
+    font-size: 28px;
+  }
+  .flex-div h3 {
+    font-size: 24px;
+  }
+  .flex-div div {
+    margin: 3% auto;
+  }
+  .portfolio-card {
+    flex: 0 100%;
+  }
+  .contact-container address {
+    flex: 0 100%;
+    margin: 0 0 10% 0;
+  }
 }
