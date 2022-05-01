@@ -149,6 +149,10 @@ header a {
   border-top-right-radius: 10px;
 }
 
+.image-link {
+  width: 100%;
+}
+
 .portfolio-card:not(#first-card) img {
   max-height: 250px;
 }
@@ -157,9 +161,10 @@ header a {
   flex: 0 100%;
 }
 
-.portfolio-card a {
+.project-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
   margin: 2%;
 }
 
@@ -196,7 +201,6 @@ address h4 {
 }
 
 address a {
-  text-decoration: none;
   color: var(--blackText);
 }
 
