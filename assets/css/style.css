@@ -243,6 +243,9 @@ footer {
     text-align: center;
     margin: 15px auto 0 auto;
   }
+  header ul {
+    flex: 0 100%;
+  }
   .content h2 {
     flex: 0 100%;
     font-size: 28px;
